@@ -2,7 +2,7 @@
 const appAuthor = "Joel Jolly"
 const authorSocialHandle = "@Withinjoel"
 
-document.write(`
+document.writeln(`
 <head>
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self' * data:;
   	script-src 'self' 'unsafe-inline' 'unsafe-eval' *;
