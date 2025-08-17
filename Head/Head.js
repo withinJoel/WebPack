@@ -1,7 +1,7 @@
 function Head(config = {}) {
-    const { appName = "Joel's App",
-	        appDescription = "Joel's App Description",
-	        appKeywords = "Joel Jolly",
+    const { appName = "Joel's App", // Default fallback
+	        appDescription = "Joel's App Description", // Default fallback
+	        appKeywords = "Joel Jolly", // Default fallback
 	        appAuthor = "Joel Jolly", // Default fallback
 		    authorSocialHandle = "@Withinjoel", // Default fallback
 	        appLogo,
