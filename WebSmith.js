@@ -1,4 +1,7 @@
-// Loader
+// Capture the <script> tag that loaded WebSmith.js
+const websmithScriptTag = document.currentScript;
+
+// Loader with callback
 function createScript(src, callback) {
     const script = document.createElement('script');
     script.src = src;
@@ -9,8 +12,7 @@ function createScript(src, callback) {
 // Step 1: Load Head.js
 createScript("https://cdn.jsdelivr.net/gh/withinjoel/WebSmith@main/Head/Head.js", () => {
     // Step 2: After Head.js, load user's script
-    const currentScript = document.currentScript;
-    const userScriptPath = currentScript.getAttribute("data-websmith");
+    const userScriptPath = websmithScriptTag.getAttribute("data-websmith");
     if (userScriptPath) {
         createScript(userScriptPath);
     }
