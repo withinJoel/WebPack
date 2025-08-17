@@ -1,3 +1,6 @@
+//WebSmith.js
+//Made with Love by Joel Jolly.
+
 // Capture the <script> tag that loaded WebSmith.js
 const websmithScriptTag = document.currentScript;
 
